@@ -19,7 +19,9 @@
 |------|----------|--------|
 | **[VSCODE_EXTENSION.md](VSCODE_EXTENSION.md)** | VS Code расширение | ⭐ НОВОЕ! |
 | **[docs/ICONS.md](docs/ICONS.md)** | 120+ иконок Radix UI | ⭐ НОВОЕ! |
-| **[VSCODE_EXTENSION_COMPLETE.md](VSCODE_EXTENSION_COMPLETE.md)** | Обзор расширения | ⭐ НОВОЕ! |
+| **[ROADMAP.md](ROADMAP.md)** | План развития фреймворка | ⭐⭐ НОВОЕ! |
+| **[IMPROVEMENTS.md](IMPROVEMENTS.md)** | Как улучшить | ⭐⭐ НОВОЕ! |
+| **[TOP_10_IMPROVEMENTS.md](TOP_10_IMPROVEMENTS.md)** | TOP-10 улучшений | ⭐⭐⭐ НОВОЕ! |
 
 ## 📚 Вся документация
 
