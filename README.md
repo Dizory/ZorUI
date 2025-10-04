@@ -25,7 +25,22 @@
 - 🌓 **Система тем** — светлая/темная темы из коробки
 - ♿ **Доступность** — полная поддержка accessibility
 - 🔄 **Реактивное состояние** — автоматическое обновление UI
-- 📱 **Кроссплатформенность** — Windows, macOS, Linux
+- 🌍 **Кроссплатформенность** — Windows, Linux, macOS (готово!), Android, iOS (в разработке)
+
+## 🌍 Поддерживаемые платформы
+
+| Платформа | Статус | Рендерер |
+|-----------|--------|----------|
+| 🖥️ **Windows** | ✅ Готово | SkiaSharp |
+| 🐧 **Linux** | ✅ Готово | SkiaSharp |
+| 🍎 **macOS** | ✅ Готово | SkiaSharp |
+| 📱 **Android** | 🔄 В разработке | MAUI + Skia |
+| 🍏 **iOS** | 🔄 В разработке | MAUI + Skia |
+| 🌐 **Web** | 🔮 Планируется | Blazor WASM |
+
+**ОДИН КОД UI - ВСЕ ПЛАТФОРМЫ!** 🎉
+
+Подробнее: [PLATFORM_GUIDE.md](PLATFORM_GUIDE.md)
 
 ## 📦 Установка
 
@@ -45,9 +60,72 @@ Install-Package ZorUI.Components
 Install-Package ZorUI.Styling
 ```
 
+## 🚀 Запуск примеров
+
+### Console приложение (для тестирования)
+```bash
+cd samples/BasicApp
+dotnet run
+```
+
+### 🎨 Desktop GUI приложение (Windows/Linux/macOS)
+```bash
+cd samples/DesktopApp
+dotnet run
+```
+
+**Да! Это настоящее кроссплатформенное GUI приложение!** 🎉
+
+### Галерея всех компонентов
+```bash
+cd samples/ComponentGallery
+dotnet run
+```
+
 ## 🎯 Быстрый старт
 
-### Создание простого приложения
+### Создание Desktop приложения
+
+```csharp
+using ZorUI.Core;
+using ZorUI.Rendering.Skia;
+using ZorUI.Components.Layout;
+using ZorUI.Components.Primitives;
+
+// Создайте окно (работает на Windows/Linux/macOS!)
+var window = new SkiaWindow(800, 600, "My App");
+
+// Установите UI
+window.RootComponent = new MyApp();
+
+// Покажите окно
+window.Show();
+
+// Ваш UI компонент
+public class MyApp : ZorComponent
+{
+    private int count = 0;
+
+    public override ZorElement Build()
+    {
+        return new VStack(spacing: 20)
+            .AddChild(
+                new Text($"Count: {count}")
+                    .WithFontSize(32)
+                    .Bold()
+            )
+            .AddChild(
+                new Button("Increment", () => 
+                {
+                    SetState(nameof(count), ++count);
+                })
+                .Primary()
+            );
+    }
+}
+```
+
+### Создание Console приложения
 
 ```csharp
 using ZorUI.Core;

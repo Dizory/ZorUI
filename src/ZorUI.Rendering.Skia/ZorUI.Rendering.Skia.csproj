@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Version>1.0.0</Version>
+    <Description>SkiaSharp-based renderer for ZorUI - Cross-platform GUI support for Windows, Linux, macOS</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ZorUI.Core\ZorUI.Core.csproj" />
+    <ProjectReference Include="..\ZorUI.Components\ZorUI.Components.csproj" />
+    <ProjectReference Include="..\ZorUI.Styling\ZorUI.Styling.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SkiaSharp" Version="2.88.7" />
+    <PackageReference Include="SkiaSharp.Views.Desktop.Common" Version="2.88.7" />
+    <PackageReference Include="SkiaSharp.Views.WindowsForms" Version="2.88.7" Condition="'$(OS)' == 'Windows_NT'" />
+    <PackageReference Include="SkiaSharp.Views.Gtk3" Version="2.88.7" Condition="'$(OS)' != 'Windows_NT'" />
+  </ItemGroup>
+
+</Project>
