@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Version>1.0.0</Version>
+    <Authors>ZorUI Team</Authors>
+    <Company>ZorUI</Company>
+    <Product>ZorUI Framework</Product>
+    <Description>Core framework for ZorUI - A cross-platform UI framework inspired by Radix UI</Description>
+    <PackageTags>UI;Framework;CrossPlatform;RadixUI;Declarative</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Reactive" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>
