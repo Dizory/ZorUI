@@ -8,7 +8,9 @@
 
 [![.NET](https://img.shields.io/badge/.NET-8.0%20%7C%209.0-512BD4)](https://dotnet.microsoft.com/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)]()
+[![Version](https://img.shields.io/badge/version-v1.5-success)](CHANGELOG.md)
+[![Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)](tests/)
+[![Components](https://img.shields.io/badge/components-40+-purple)](docs/QuickReference.md)
 
 [📖 Навигация](INDEX.md) • [🚀 CLI](CLI_GUIDE.md) • [🎨 VS Code](VSCODE_EXTENSION.md) • [🗺️ Roadmap](ROADMAP.md) • [🌍 Платформы](PLATFORM_GUIDE.md) • [📚 Docs](docs/README.md)
 

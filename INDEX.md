@@ -13,15 +13,23 @@
 
 ---
 
-## 🆕 НОВОЕ!
+## 🆕 НОВОЕ В v1.5!
 
 | Файл | Описание | Статус |
 |------|----------|--------|
-| **[VSCODE_EXTENSION.md](VSCODE_EXTENSION.md)** | VS Code расширение | ⭐ НОВОЕ! |
-| **[docs/ICONS.md](docs/ICONS.md)** | 120+ иконок Radix UI | ⭐ НОВОЕ! |
-| **[ROADMAP.md](ROADMAP.md)** | План развития фреймворка | ⭐⭐ НОВОЕ! |
-| **[IMPROVEMENTS.md](IMPROVEMENTS.md)** | Как улучшить | ⭐⭐ НОВОЕ! |
-| **[TOP_10_IMPROVEMENTS.md](TOP_10_IMPROVEMENTS.md)** | TOP-10 улучшений | ⭐⭐⭐ НОВОЕ! |
+| **[✅_ALL_IMPROVEMENTS_DONE.md](✅_ALL_IMPROVEMENTS_DONE.md)** | ВСЁ ГОТОВО! | ⭐⭐⭐ НОВОЕ! |
+| **[NEW_FEATURES_SUMMARY.md](NEW_FEATURES_SUMMARY.md)** | Обзор v1.5 | ⭐⭐⭐ НОВОЕ! |
+| **[NEW_MODULES_GUIDE.md](NEW_MODULES_GUIDE.md)** | Руководство | ⭐⭐ НОВОЕ! |
+| **[🚀_V1.5_COMPLETE.md](🚀_V1.5_COMPLETE.md)** | v1.5 завершен | ⭐⭐ НОВОЕ! |
+
+## 🆕 НОВОЕ В v1.0!
+
+| Файл | Описание | Статус |
+|------|----------|--------|
+| **[VSCODE_EXTENSION.md](VSCODE_EXTENSION.md)** | VS Code расширение | ⭐ |
+| **[docs/ICONS.md](docs/ICONS.md)** | 120+ иконок Radix UI | ⭐ |
+| **[ROADMAP.md](ROADMAP.md)** | План развития | ⭐ |
+| **[TOP_10_IMPROVEMENTS.md](TOP_10_IMPROVEMENTS.md)** | TOP-10 улучшений | ⭐ |
 
 ## 📚 Вся документация
 

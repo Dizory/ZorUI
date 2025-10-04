@@ -5,11 +5,106 @@ All notable changes to ZorUI will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.0] - 2024-10-04
+
+### Added
+
+#### 🧪 Testing System (NEW!)
+- `ZorUI.Tests` project - Unit testing framework
+- Core tests (ZorComponent, ZorElement)
+- Component tests (Button, Text, etc.)
+- Styling tests (Theme)
+- FluentAssertions integration
+- Moq for mocking
+- Test coverage ready
+
+#### ⚡ Performance Optimization (NEW!)
+- `VirtualScrollView<T>` - Virtual scrolling for large lists
+- `MemoizedComponent` - Caching for expensive builds
+- `Memo` helper - Memoization wrapper
+- Performance profiling support
+
+#### 🎬 Animation System (NEW!)
+- `ZorUI.Animations` project - Complete animation system
+- `Animation` class - 10+ animation types
+- `Animatable` component - Animation wrapper
+- Fade, Slide, Scale, Rotate animations
+- Spring physics animation
+- 20+ easing functions
+- Repeat and auto-reverse support
+
+#### 🖱️ Drag & Drop (NEW!)
+- `ZorUI.DragDrop` project - Drag and drop system
+- `Draggable` component - Make elements draggable
+- `DropZone` component - Accept dropped elements
+- Drag events (start, drag, end)
+- Accept conditions
+- Drag data transfer
+
+#### 📊 DataGrid (NEW!)
+- `ZorUI.DataGrid` project - Advanced data table
+- `DataGrid<T>` component - Type-safe grid
+- Sorting support (all columns)
+- Filtering support
+- Pagination (configurable page size)
+- Row selection (single/multi)
+- Custom cell templates
+- Row click events
+
+#### 🗺️ Routing System (NEW!)
+- `ZorUI.Routing` project - Navigation system
+- `Router` class - Route management
+- `RouterOutlet` component - Display current route
+- URL parameters support
+- History management (back/forward)
+- Parameterized routes (/users/:id)
+
+#### ⌨️ Keyboard Shortcuts (NEW!)
+- `KeyboardShortcut` system
+- `KeyboardShortcutManager` - Global shortcuts
+- Context-specific shortcuts
+- Modifier keys (Ctrl, Shift, Alt, Cmd)
+- Chord shortcuts support
+- Display string formatting
+
+#### 📅 Advanced Form Components (NEW!)
+- `DatePicker` - Full calendar picker
+- `ColorPicker` - RGB sliders + presets
+- Month navigation
+- Min/Max date support
+- Custom formatting
+- Preset colors
+
+#### 🛠️ DevTools (NEW!)
+- `ZorUI.DevTools` project - Developer tools
+- `DevToolsWindow` - Debugging interface
+- Inspector panel - Component tree
+- State viewer panel
+- Performance panel
+- Console panel
+- Global DevTools.Toggle()
+
+#### 🔧 Utility Helpers (NEW!)
+- `FormValidator` - Form validation system
+- `ValidationRule` - Custom rules
+- Built-in rules (Required, Email, MinLength, etc.)
+- `LocalStorage` - Data persistence
+- `ApiClient` - HTTP client helper
+- `AsyncState<T>` - Async state management
+
+#### 📱 New Sample (NEW!)
+- `AdvancedDemo` - Showcase all v1.5 features
+- Routing example
+- Animation examples
+- Drag & Drop demo
+- DataGrid demo
+- Form examples
+
 ## [1.0.0] - 2024-10-04
 
 ### Added
 
-#### 🚀 CLI Tool (NEW!)
+#### 🚀 CLI Tool
 - `ZorUI.CLI` - Command-line tool for creating projects
 - `zorui new` command - Create projects from templates
 - `zorui list` command - List available templates  

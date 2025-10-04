@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWindowsForms>true</UseWindowsForms>
+    <RootNamespace>AdvancedDemo</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\ZorUI.Core\ZorUI.Core.csproj" />
+    <ProjectReference Include="..\..\src\ZorUI.Components\ZorUI.Components.csproj" />
+    <ProjectReference Include="..\..\src\ZorUI.Styling\ZorUI.Styling.csproj" />
+    <ProjectReference Include="..\..\src\ZorUI.Rendering.Skia\ZorUI.Rendering.Skia.csproj" />
+    <ProjectReference Include="..\..\src\ZorUI.Icons\ZorUI.Icons.csproj" />
+    <ProjectReference Include="..\..\src\ZorUI.Animations\ZorUI.Animations.csproj" />
+    <ProjectReference Include="..\..\src\ZorUI.DragDrop\ZorUI.DragDrop.csproj" />
+    <ProjectReference Include="..\..\src\ZorUI.DataGrid\ZorUI.DataGrid.csproj" />
+    <ProjectReference Include="..\..\src\ZorUI.Routing\ZorUI.Routing.csproj" />
+    <ProjectReference Include="..\..\src\ZorUI.DevTools\ZorUI.DevTools.csproj" />
+  </ItemGroup>
+
+</Project>
