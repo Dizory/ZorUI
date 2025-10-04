@@ -10,7 +10,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)]()
 
-[Документация](docs/README.md) • [Примеры](samples/) • [API Reference](docs/api/) • [Contributing](CONTRIBUTING.md)
+[📖 Навигация](INDEX.md) • [🚀 CLI Guide](CLI_GUIDE.md) • [🌍 Платформы](PLATFORM_GUIDE.md) • [📚 Документация](docs/README.md) • [💡 Примеры](samples/)
 
 </div>
 
@@ -44,7 +44,36 @@
 
 ## 📦 Установка
 
-### NuGet Package Manager
+### 🚀 Вариант 1: CLI инструмент (рекомендуется!)
+
+Установите ZorUI CLI для быстрого создания проектов:
+
+```bash
+# Linux/macOS
+./install-cli.sh
+
+# Windows
+install-cli.cmd
+```
+
+Затем создавайте проекты одной командой:
+
+```bash
+# Создать desktop приложение
+zorui new desktop --name MyApp
+cd MyApp
+dotnet run
+
+# Посмотреть все шаблоны
+zorui list
+
+# Получить справку
+zorui --help
+```
+
+Подробнее: [CLI_GUIDE.md](CLI_GUIDE.md)
+
+### Вариант 2: NuGet пакеты
 
 ```bash
 dotnet add package ZorUI.Core
@@ -52,12 +81,12 @@ dotnet add package ZorUI.Components
 dotnet add package ZorUI.Styling
 ```
 
-### Package Manager Console
+### Вариант 3: Локальные ссылки
 
-```powershell
-Install-Package ZorUI.Core
-Install-Package ZorUI.Components
-Install-Package ZorUI.Styling
+```bash
+dotnet add reference ../src/ZorUI.Core/ZorUI.Core.csproj
+dotnet add reference ../src/ZorUI.Components/ZorUI.Components.csproj
+dotnet add reference ../src/ZorUI.Styling/ZorUI.Styling.csproj
 ```
 
 ## 🚀 Запуск примеров

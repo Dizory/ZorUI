@@ -9,6 +9,37 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+#### 🚀 CLI Tool (NEW!)
+- `ZorUI.CLI` - Command-line tool for creating projects
+- `zorui new` command - Create projects from templates
+- `zorui list` command - List available templates  
+- `zorui info` command - Show framework information
+- **4 project templates:**
+  - `desktop` - Cross-platform desktop GUI application
+  - `console` - Console application
+  - `component` - Component library
+  - `full` - Full-featured application with best practices
+- Beautiful terminal UI with Spectre.Console
+- Installation scripts (install-cli.sh, install-cli.cmd)
+- Global .NET tool support
+
+#### 🎨 SkiaSharp Renderer (NEW!)
+- `ZorUI.Rendering.Skia` - Cross-platform GUI renderer
+- Real window support (Windows, Linux, macOS)
+- `SkiaWindow` - Cross-platform window class
+- 60 FPS rendering
+- GPU acceleration
+- Mouse and keyboard events support
+- Full component rendering (Text, Button, TextField, etc.)
+
+#### Desktop Sample (NEW!)
+- `samples/DesktopApp` - Full desktop GUI application
+- Counter with buttons
+- Form with validation
+- Dark/Light theme switcher
+- Cards and badges
+- Working on Windows, Linux, macOS
+
 #### Core Framework
 - `ZorElement` - Base class for all UI elements
 - `ZorComponent` - Base class for stateful components
@@ -94,12 +125,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Getting Started guide
 - Core Concepts documentation
 - Styling guide
+- State Management guide
 - Best Practices guide
 - Quick Reference
 - API documentation
 - Contributing guidelines
-- Code of Conduct
 - License (MIT)
+- **CLI Documentation (NEW!):**
+  - CLI_GUIDE.md - Complete CLI guide
+  - QUICK_START_CLI.md - Quick start with CLI
+  - CLI_README.md - CLI overview
+  - README_CLI.md - CLI features
+- **Platform Documentation (NEW!):**
+  - PLATFORM_GUIDE.md - Complete platform guide
+  - PLATFORM_SUPPORT.md - Platform support details
+  - FINAL_ANSWER.md - Platform summary
+- **Usage Guides (NEW!):**
+  - HOW_TO_USE.md - How to create projects
+  - START_HERE.md - Entry point for beginners
+  - GETTING_STARTED_QUICK.md - 5-minute start
 
 ### Samples
 - BasicApp - Simple counter application

@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    
+    <!-- Package as global tool -->
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>zorui</ToolCommandName>
+    <PackageId>ZorUI.CLI</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>ZorUI Team</Authors>
+    <Description>CLI tool for creating and managing ZorUI projects</Description>
+    <PackageTags>ZorUI;UI;Framework;CLI</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Spectre.Console" Version="0.49.1" />
+    <PackageReference Include="System.CommandLine" Version="2.0.0-beta4.22272.1" />
+  </ItemGroup>
+
+</Project>
