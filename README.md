@@ -10,7 +10,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)]()
 
-[📖 Навигация](INDEX.md) • [🚀 CLI Guide](CLI_GUIDE.md) • [🌍 Платформы](PLATFORM_GUIDE.md) • [📚 Документация](docs/README.md) • [💡 Примеры](samples/)
+[📖 Навигация](INDEX.md) • [🚀 CLI Guide](CLI_GUIDE.md) • [🎨 VS Code Extension](VSCODE_EXTENSION.md) • [🌍 Платформы](PLATFORM_GUIDE.md) • [📚 Документация](docs/README.md) • [💡 Примеры](samples/)
 
 </div>
 

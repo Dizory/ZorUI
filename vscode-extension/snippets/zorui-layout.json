@@ -1,0 +1,98 @@
+{
+  "ZorUI Container": {
+    "prefix": "zuicont",
+    "body": [
+      "new Container()",
+      "\t.WithPadding(EdgeInsets.All(${1:16}))",
+      "\t.WithBackground(${2:theme.Colors.Background})",
+      "\t.AddChild(${3:child})"
+    ],
+    "description": "Create a ZorUI Container"
+  },
+  "ZorUI Grid": {
+    "prefix": "zuigrid",
+    "body": [
+      "new Grid(columns: ${1:2}, spacing: ${2:16})",
+      "\t.AddChild(${3:child1})",
+      "\t.AddChild(${4:child2})"
+    ],
+    "description": "Create a ZorUI Grid"
+  },
+  "ZorUI ScrollView": {
+    "prefix": "zuiscroll",
+    "body": [
+      "new ScrollView()",
+      "\t.${1|Vertical,Horizontal,Both|}()",
+      "\t.AddChild(${2:child})"
+    ],
+    "description": "Create a ZorUI ScrollView"
+  },
+  "ZorUI ZStack": {
+    "prefix": "zuizstack",
+    "body": [
+      "new ZStack()",
+      "\t.AddChild(${1:background})",
+      "\t.AddChild(${2:foreground})"
+    ],
+    "description": "Create a ZorUI ZStack"
+  },
+  "ZorUI Spacer": {
+    "prefix": "zuispacer",
+    "body": [
+      "new Spacer()"
+    ],
+    "description": "Create a ZorUI Spacer"
+  },
+  "ZorUI Divider": {
+    "prefix": "zuidivider",
+    "body": [
+      "new Divider()",
+      "\t.${1|Horizontal,Vertical|}()",
+      "\t.WithColor(${2:theme.Colors.Border})"
+    ],
+    "description": "Create a ZorUI Divider"
+  },
+  "ZorUI Wrap": {
+    "prefix": "zuiwrap",
+    "body": [
+      "new Wrap(spacing: ${1:8})",
+      "\t.AddChild(${2:child1})",
+      "\t.AddChild(${3:child2})"
+    ],
+    "description": "Create a ZorUI Wrap"
+  },
+  "ZorUI Page Layout": {
+    "prefix": "zuipage",
+    "body": [
+      "public class ${1:HomePage} : ZorComponent",
+      "{",
+      "\tpublic override ZorElement Build()",
+      "\t{",
+      "\t\tvar theme = Theme.${2|Light,Dark|}();",
+      "",
+      "\t\treturn new VStack(spacing: 0)",
+      "\t\t\t.WithBackground(theme.Colors.Background)",
+      "\t\t\t",
+      "\t\t\t// Header",
+      "\t\t\t.AddChild(",
+      "\t\t\t\tnew Container()",
+      "\t\t\t\t\t.WithPadding(EdgeInsets.All(16))",
+      "\t\t\t\t\t.AddChild(new Text(\"${3:Title}\").Bold())",
+      "\t\t\t)",
+      "\t\t\t",
+      "\t\t\t// Content",
+      "\t\t\t.AddChild(",
+      "\t\t\t\tnew ScrollView()",
+      "\t\t\t\t\t.Vertical()",
+      "\t\t\t\t\t.AddChild(",
+      "\t\t\t\t\t\tnew Container()",
+      "\t\t\t\t\t\t\t.WithPadding(EdgeInsets.All(16))",
+      "\t\t\t\t\t\t\t.AddChild(${4:content})",
+      "\t\t\t\t\t)",
+      "\t\t\t);",
+      "\t}",
+      "}"
+    ],
+    "description": "Create a full page layout"
+  }
+}

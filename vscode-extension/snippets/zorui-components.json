@@ -1,0 +1,121 @@
+{
+  "ZorUI Component": {
+    "prefix": "zuicomp",
+    "body": [
+      "public class ${1:MyComponent} : ZorComponent",
+      "{",
+      "\tprivate ${2:int} _${3:state} = ${4:0};",
+      "",
+      "\tpublic override ZorElement Build()",
+      "\t{",
+      "\t\treturn new ${5:VStack}(spacing: ${6:20})",
+      "\t\t\t.AddChild(",
+      "\t\t\t\tnew Text(\"${7:Hello}\").WithFontSize(${8:24})",
+      "\t\t\t);",
+      "\t}",
+      "}"
+    ],
+    "description": "Create a ZorUI component"
+  },
+  "ZorUI Button": {
+    "prefix": "zuibtn",
+    "body": [
+      "new Button(\"${1:Click me}\", ${2:HandleClick})",
+      "\t.${3|Primary,Secondary,Outline,Ghost|}()",
+      "\t.${4|Small,Medium,Large|}()"
+    ],
+    "description": "Create a ZorUI Button"
+  },
+  "ZorUI Text": {
+    "prefix": "zuitext",
+    "body": [
+      "new Text(\"${1:Text}\")",
+      "\t.WithFontSize(${2:16})",
+      "\t.${3|Bold,Italic,Underline|}()"
+    ],
+    "description": "Create a ZorUI Text element"
+  },
+  "ZorUI VStack": {
+    "prefix": "zuivstack",
+    "body": [
+      "new VStack(spacing: ${1:20})",
+      "\t.WithPadding(EdgeInsets.All(${2:16}))",
+      "\t.AddChild(${3:child})"
+    ],
+    "description": "Create a ZorUI VStack"
+  },
+  "ZorUI HStack": {
+    "prefix": "zuihstack",
+    "body": [
+      "new HStack(spacing: ${1:20})",
+      "\t.WithPadding(EdgeInsets.All(${2:16}))",
+      "\t.AddChild(${3:child})"
+    ],
+    "description": "Create a ZorUI HStack"
+  },
+  "ZorUI Card": {
+    "prefix": "zuicard",
+    "body": [
+      "new Card()",
+      "\t.${1|Elevated,Outlined|}()",
+      "\t.WithHeader(new Text(\"${2:Title}\"))",
+      "\t.WithContent(",
+      "\t\tnew Text(\"${3:Content}\")",
+      "\t)"
+    ],
+    "description": "Create a ZorUI Card"
+  },
+  "ZorUI TextField": {
+    "prefix": "zuitf",
+    "body": [
+      "new TextField(\"${1:Placeholder}\")",
+      "\t.WithValue(${2:_value})",
+      "\t.WithOnChange(${3:value} => SetState(nameof(${2:_value}), ${2:_value} = ${3:value}))"
+    ],
+    "description": "Create a ZorUI TextField"
+  },
+  "ZorUI Dialog": {
+    "prefix": "zuidialog",
+    "body": [
+      "new Dialog()",
+      "\t.WithTitle(\"${1:Title}\")",
+      "\t.WithContent(",
+      "\t\tnew Text(\"${2:Content}\")",
+      "\t)",
+      "\t.WithActions(",
+      "\t\tnew HStack(spacing: 8)",
+      "\t\t\t.AddChild(new Button(\"Cancel\", ${3:OnCancel}).Secondary())",
+      "\t\t\t.AddChild(new Button(\"OK\", ${4:OnOk}).Primary())",
+      "\t)"
+    ],
+    "description": "Create a ZorUI Dialog"
+  },
+  "ZorUI Icon": {
+    "prefix": "zuiicon",
+    "body": [
+      "new Icon(ZorIcon.${1|Home,User,Settings,Search,Menu,Close,ChevronLeft,ChevronRight,Check,X|})",
+      "\t.WithSize(${2:24})",
+      "\t.WithColor(${3:theme.Colors.Primary})"
+    ],
+    "description": "Create a ZorUI Icon"
+  },
+  "ZorUI Tabs": {
+    "prefix": "zuitas",
+    "body": [
+      "new Tabs(${1:_currentTab})",
+      "\t.AddTab(new Tab(\"${2:tab1}\", \"${3:Tab 1}\"))",
+      "\t.AddTab(new Tab(\"${4:tab2}\", \"${5:Tab 2}\"))",
+      "\t.WithOnTabChange(tab => SetState(nameof(${1:_currentTab}), ${1:_currentTab} = tab))"
+    ],
+    "description": "Create a ZorUI Tabs"
+  },
+  "ZorUI State": {
+    "prefix": "zuistate",
+    "body": [
+      "private ${1:string} _${2:state} = ${3:\"\"};",
+      "",
+      "SetState(nameof(_${2:state}), _${2:state} = ${4:value});"
+    ],
+    "description": "Create state and setter"
+  }
+}

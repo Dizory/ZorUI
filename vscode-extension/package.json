@@ -1,0 +1,91 @@
+{
+  "name": "zorui",
+  "displayName": "ZorUI Framework",
+  "description": "VS Code extension for ZorUI - Cross-platform UI framework for .NET",
+  "version": "1.0.0",
+  "publisher": "zorui",
+  "icon": "icons/zorui-icon.png",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Snippets",
+    "Programming Languages",
+    "Other"
+  ],
+  "keywords": [
+    "zorui",
+    "ui",
+    "framework",
+    "dotnet",
+    "csharp",
+    "cross-platform"
+  ],
+  "activationEvents": [
+    "onLanguage:csharp"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "snippets": [
+      {
+        "language": "csharp",
+        "path": "./snippets/zorui-components.json"
+      },
+      {
+        "language": "csharp",
+        "path": "./snippets/zorui-layout.json"
+      },
+      {
+        "language": "csharp",
+        "path": "./snippets/zorui-forms.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "zorui.createComponent",
+        "title": "ZorUI: Create Component"
+      },
+      {
+        "command": "zorui.createPage",
+        "title": "ZorUI: Create Page"
+      },
+      {
+        "command": "zorui.insertIcon",
+        "title": "ZorUI: Insert Icon"
+      }
+    ],
+    "configuration": {
+      "title": "ZorUI",
+      "properties": {
+        "zorui.useFluentApi": {
+          "type": "boolean",
+          "default": true,
+          "description": "Use Fluent API style in snippets"
+        },
+        "zorui.defaultTheme": {
+          "type": "string",
+          "default": "light",
+          "enum": ["light", "dark"],
+          "description": "Default theme for new components"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.0.0",
+    "vsce": "^2.15.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zorui/zorui"
+  },
+  "license": "MIT"
+}
