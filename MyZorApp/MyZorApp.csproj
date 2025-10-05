@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <!-- Ссылки на локальные проекты ZorUI -->
+  <ItemGroup>
+    <ProjectReference Include="..\src\ZorUI.Core\ZorUI.Core.csproj" />
+    <ProjectReference Include="..\src\ZorUI.Components\ZorUI.Components.csproj" />
+    <ProjectReference Include="..\src\ZorUI.Styling\ZorUI.Styling.csproj" />
+    <ProjectReference Include="..\src\ZorUI.Rendering\ZorUI.Rendering.csproj" />
+  </ItemGroup>
+
+</Project>

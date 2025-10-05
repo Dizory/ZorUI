@@ -1,0 +1,66 @@
+{
+  "ZorUI Checkbox": {
+    "prefix": "zuichk",
+    "body": [
+      "new Checkbox(\"${1:Label}\", ${2:_checked})",
+      "\t.WithOnChange(checked => SetState(nameof(${2:_checked}), ${2:_checked} = checked))"
+    ],
+    "description": "Create a ZorUI Checkbox"
+  },
+  "ZorUI Switch": {
+    "prefix": "zuiswitch",
+    "body": [
+      "new Switch(\"${1:Label}\", ${2:_enabled})",
+      "\t.WithOnChange(enabled => SetState(nameof(${2:_enabled}), ${2:_enabled} = enabled))"
+    ],
+    "description": "Create a ZorUI Switch"
+  },
+  "ZorUI Radio Group": {
+    "prefix": "zuiradio",
+    "body": [
+      "new RadioGroup(${1:_selected})",
+      "\t.AddOption(new Radio(\"${2:option1}\", \"${3:Option 1}\"))",
+      "\t.AddOption(new Radio(\"${4:option2}\", \"${5:Option 2}\"))",
+      "\t.WithOnChange(value => SetState(nameof(${1:_selected}), ${1:_selected} = value))"
+    ],
+    "description": "Create a ZorUI RadioGroup"
+  },
+  "ZorUI Slider": {
+    "prefix": "zuislider",
+    "body": [
+      "new Slider(${1:_value}, ${2:min}: 0, ${3:max}: 100)",
+      "\t.WithOnChange(value => SetState(nameof(${1:_value}), ${1:_value} = value))",
+      "\t.WithShowValue()"
+    ],
+    "description": "Create a ZorUI Slider"
+  },
+  "ZorUI Form": {
+    "prefix": "zuiform",
+    "body": [
+      "new VStack(spacing: 16)",
+      "\t.WithPadding(EdgeInsets.All(16))",
+      "\t",
+      "\t// Form fields",
+      "\t.AddChild(",
+      "\t\tnew TextField(\"${1:Name}\")",
+      "\t\t\t.WithValue(_${2:name})",
+      "\t\t\t.WithOnChange(v => SetState(nameof(_${2:name}), _${2:name} = v))",
+      "\t)",
+      "\t",
+      "\t.AddChild(",
+      "\t\tnew TextField(\"${3:Email}\")",
+      "\t\t\t.WithValue(_${4:email})",
+      "\t\t\t.WithOnChange(v => SetState(nameof(_${4:email}), _${4:email} = v))",
+      "\t)",
+      "\t",
+      "\t// Submit button",
+      "\t.AddChild(",
+      "\t\tnew Button(\"${5:Submit}\", ${6:HandleSubmit})",
+      "\t\t\t.Primary()",
+      "\t\t\t.WithFullWidth()",
+      "\t\t\t.Disabled(string.IsNullOrEmpty(_${2:name}))",
+      "\t)"
+    ],
+    "description": "Create a complete form"
+  }
+}
